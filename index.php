@@ -1,10 +1,10 @@
 <?php
 
-if(isset($_POST['query'])){
+if(isset($_REQUEST['query'])){
   
   include('Librarian.php');
   $Librarian = new Librarian();
-  $Query = $Librarian->Query( $_POST['query'] );
+  $Query = $Librarian->Query( $_REQUEST['query'] );
   var_dump($Query);
   
 }else{
