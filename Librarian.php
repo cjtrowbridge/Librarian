@@ -16,7 +16,7 @@ class Librarian{
   public function Query($Query){
     //TODO add caching
     
-    return fetchWikipediaAbstract($Query);
+    return $this->fetchWikipediaAbstract($Query);
     
   }
   
