@@ -5,7 +5,10 @@ if(isset($_REQUEST['query'])){
   include('Librarian.php');
   $Librarian = new Librarian();
   $Query = $Librarian->Query( $_REQUEST['query'] );
-  var_dump($Query);
+  
+  header("Content-Type: application/json; charset=UTF-8");
+  $obj = json_decode($Query, true);
+
   
 }else{
   
