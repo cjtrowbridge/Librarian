@@ -8,7 +8,7 @@ if(isset($_REQUEST['query'])){
   
   header("Content-Type: application/json; charset=UTF-8");
   $obj = json_decode($Query, true);
-
+  die($obj);
   
 }else{
   
