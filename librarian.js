@@ -1,6 +1,6 @@
-function LibrarianQuery( Q ){
+function LibrarianQuery( Q, callback ){
   $.post( "./", { query: Q })
   .done(function( data ) {
-    return data;
+    callback( data );
   });
 }
