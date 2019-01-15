@@ -41,7 +41,7 @@
         
         <div class="card my-3">
           <div class="card-body">
-            <form clas="form" action="" method="post">
+            <form id="LibrarianForm" class="form" action="" method="post">
               <div class="form-group">
                 <label for="query">Query</label>
                 <input type="text" name="query" class="form-control" id="query" placeholder="Enter Query">
@@ -66,7 +66,7 @@
   <script src="librarian.js"></script>
   <script>
     $('#query').focus();
-    $('#query').submit(function(event){
+    $('#LibrarianForm').submit(function(event){
       event.preventDefault();
       var query = $(this).val();
       var response = LibrarianQuery( query );
