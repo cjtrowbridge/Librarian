@@ -34,7 +34,7 @@ class Librarian{
     
     //TODO Check for warnings
     
-    return $obj['query']['pages'][0];
+    return reset($obj['query']['pages']);
   }
   
 }
