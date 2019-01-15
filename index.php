@@ -7,8 +7,8 @@ if(isset($_REQUEST['query'])){
   $Query = $Librarian->Query( $_REQUEST['query'] );
   
   header("Content-Type: application/json; charset=UTF-8");
-  $obj = json_decode($Query, true);
-  die($obj);
+  $obj = json_encode($Query, JSON_PRETTY_PRINT);
+  echo $obj;
   
 }else{
   
