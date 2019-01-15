@@ -66,13 +66,17 @@
   <script src="librarian.js"></script>
   <script>
     $('#query').focus();
+    
     $('#LibrarianForm').submit(function(event){
       event.preventDefault();
       var query = $(this).val();
-      var response = LibrarianQuery( query );
-      console.log( response );
-      
+      var response = LibrarianQuery( query, QueryResultHandler );
     });
+    
+    function QueryResultHandler( result ){
+      console.log( result );
+    }
+    
   </script>
 </body>
 </html>
