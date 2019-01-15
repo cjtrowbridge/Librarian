@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/favicon.ico">
+
+    <title>Librarian</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/css/theme.bootstrap_4.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/css/theme.ice.min.css">
+
+</head>
+<body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="my-1">Librarian</h1>
+        
+        <div class="card">
+          <div class="card-body">
+            <p>Librarian is a project to create a natural language interface for accessing knowledge from sources like wikipedia.</p>
+            <h4>Why?</h4>
+            <p>Currently, this functionality is available using Google Assistant. There are several problems. Google has become fairly scary and evil, and Assistant is in the Google cloud. You do not have control of it, and it does not work if you don't have a decent connection to Google.</p>
+            <h4>How?</h4>
+            <p>There are many opportunities to improve on the technologies mentioned above which feature similar funtionality. For one, wikipedia features distributed access. One may already freely clone the entire thing onto one's mobile device and peruse it without access to the internet. Using tools like IPFS and BitTorrent, this is a mutually beneficial and interdependent service which many citizens can participate in; sharing this valuable content securely between nodes while accessing that content freely.</p>
+            <p>While Google Assistant can read abstracts of articles or recite quotes from them, it makes no real attempt to provide deep understanding of the content to users. There is no way to get sucked into a long series of articles and find interesting and serendipitous learning through Google Assistant. A natural language interface for ongoing conversations about knowledge would be not just an improvement, but a quantum leap into a much more valuable and interesting domain which Google is not attempting to enter.</p>
+            <h4>Future Plans;</h4>
+            <ul>
+              <li>Currently, I am writing initial primitives for accessing and summarizing content from public Wikipedia APIs.</li>
+              <li>Next comes forming a precis based on arbitrary content.</li>
+              <li>Then text to speech option for the precis.</li>
+              <li>Then deeper contextual work can start.</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="card">
+          <div class="card-body">
+            <form clas="form" action="" method="post">
+              <div class="form-group">
+                <label for="query">Query</label>
+                <input type="query" class="form-control" id="query" placeholder="Enter Query">
+              </div>
+              <input type="submit" class="btn btn-primary" value="Submit">
+            </form>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.1/js/jquery.tablesorter.min.js"></script>
+  <script src="librarian.js"></script>
+</body>
+</html>
